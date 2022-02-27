@@ -7,11 +7,15 @@ function ShowWeather(){
 
     const [weatherData, setData] = useState([])
 
-    {getWeather('gothenburg').then( (d: any) => {setData(d)} )}
+    
+
+    const infoFromChild = (location: string) => {
+        {getWeather(location).then( (d: any) => {setData(d)} )}
+       }
 
     return(
         <div>
-            <Input />
+            <Input hello={infoFromChild}/>
             <div style={weatherInfoStyle}>
             {weatherData.map((object, _i) => {return <p>{object}</p>} )}    
             </div>      

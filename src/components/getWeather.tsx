@@ -20,7 +20,7 @@ export interface IWeatherResponseDTO {
 }
 
 function makeUrl(location: string){
-    const apiKey = '8ba035014de4131589877badb0269696'
+    const apiKey = 'f7ca6deb859c370ecd4f5c74fb3159b0'
     const baseUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + location + "&appid=" + apiKey
 
     return baseUrl

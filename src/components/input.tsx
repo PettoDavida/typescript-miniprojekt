@@ -1,12 +1,12 @@
 import { useState } from "react"
 
-function Input(){
+function Input(prop: any){
 
     const[location, target] = useState("")
 
     const getLocation = (event: any) => {
         target(event.target.value)
-        console.log(event.target.value)
+        prop.hello(event.target.value)
        }
 
     return(
