@@ -7,10 +7,8 @@ function ShowWeather(){
 
     const [weatherData, setData] = useState([])
 
-    
-
     const infoFromChild = (location: string) => {
-        {getWeather(location).then( (d: any) => {setData(d)} )}
+        {getWeather(location).then( (d: any) => {setData(d)} ).catch( (reason) => {console.log(reason)} )}
        }
 
     return(

@@ -5,15 +5,20 @@ function Input(prop: any){
     const[location, target] = useState("")
 
     const getLocation = (event: any) => {
-        target(event.target.value)
-        prop.hello(event.target.value)
+        if (event.keyCode === 13) {
+            event.preventDefault()
+            target(event.target.value)
+            prop.hello(event.target.value) 
+        }
        }
+
+
 
     return(
         <input
         type="text"
-        value={location}
-        onChange={getLocation}
+        defaultValue={location}
+        onKeyDown={getLocation}
         placeholder="Enter location"/>
         )
 }
