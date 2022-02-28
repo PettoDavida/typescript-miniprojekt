@@ -5,12 +5,11 @@ function Clock() {
     useEffect(() => {
         setInterval(() => {
             const date = new Date();
-            setClockstate(date.toLocaleTimeString())
+            setClockstate(date.toLocaleTimeString().replace(/:[^:]*$/,''))
         }, 1000)
     }, [])
 
     const today = new Date();
-    const displayDate = today.getDate() + "/" + today.getMonth() + "/" + today.getFullYear()
  
     return (
         <div className="Clock">{clockState}</div>
