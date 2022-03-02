@@ -6,7 +6,7 @@ function Clock() {
         setInterval(() => {
             const date = new Date();
             setClockstate(date.toLocaleTimeString().replace(/:[^:]*$/,''))
-        }, 1000)
+        }, 10)
     }, [])
 
     const today = new Date();
