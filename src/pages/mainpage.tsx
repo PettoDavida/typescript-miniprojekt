@@ -4,6 +4,7 @@ import Location from "../components/Location";
 import Forecast from "../components/Forecast";
 import Clock from '../components/Clock';
 import Date from '../components/Date';
+import About from "../pages/About";
 
 
 function MainPage(){
@@ -13,6 +14,7 @@ function MainPage(){
             <div>
                 <ShowWeather />
             </div>
+            <About />
             <SearchBar/>
             <Location/>
             <Forecast/>
