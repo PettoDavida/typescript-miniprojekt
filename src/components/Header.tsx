@@ -6,7 +6,7 @@ function Header() {
     <nav className="header">
       <div className="project-name">
         <Link to="/">
-          <h2>PROJECT</h2>
+          <h2>Fantastical Weather</h2>
         </Link>
       </div>
       <ul className="nav-btns">
