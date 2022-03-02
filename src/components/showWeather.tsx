@@ -1,30 +1,28 @@
-import { CSSProperties, useState } from "react"
+import { useState } from "react"
+import Forecast from "./Forecast"
 import { getWeather } from "./getWeather"
-import Input from "./input"
+import SearchBar from "./SearchBar"
 
 
-function ShowWeather(){
+function ShowWeather(prop:any){
 
     const [weatherData, setData] = useState([])
 
     const infoFromChild = (location: string) => {
         {getWeather(location).then( (d: any) => {setData(d)} ).catch( (reason) => {console.log(reason)} )}
+        prop.childToParent(location) 
        }
+
+
 
     return(
         <div>
-            <Input childToParent={infoFromChild}/>
-            <div style={weatherInfoStyle}>
-            {weatherData.map((object, _i) => {return <p key={_i}>{object}</p>} )}    
-            </div>      
+            <SearchBar childToParent={infoFromChild}/>
+            <Forecast parentToChild={weatherData}/>     
         </div>
     )
 }
 
-const weatherInfoStyle: CSSProperties = {
-    display: 'flex',
-    justifyContent: 'space-around',
 
-}
 
 export default ShowWeather
