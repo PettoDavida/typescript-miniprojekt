@@ -8,7 +8,7 @@ function Input(prop: any){
         if (event.keyCode === 13) {
             event.preventDefault()
             target(event.target.value)
-            prop.hello(event.target.value) 
+            prop.childToParent(event.target.value) 
         }
        }
 

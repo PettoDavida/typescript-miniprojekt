@@ -13,16 +13,17 @@ function ShowWeather(){
 
     return(
         <div>
-            <Input hello={infoFromChild}/>
+            <Input childToParent={infoFromChild}/>
             <div style={weatherInfoStyle}>
-            {weatherData.map((object, _i) => {return <p>{object}</p>} )}    
+            {weatherData.map((object, _i) => {return <p key={_i}>{object}</p>} )}    
             </div>      
         </div>
     )
 }
 
 const weatherInfoStyle: CSSProperties = {
-    display: 'grid',
+    display: 'flex',
+    justifyContent: 'space-around',
 
 }
 
