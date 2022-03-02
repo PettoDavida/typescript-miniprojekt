@@ -1,19 +1,24 @@
-import React from "react";
-import "../components/CSS/Header.css";
-import { FaCloudSunRain } from 'react-icons/fa';
-
+import "./Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <nav className="header">
       <div className="project-name">
-        <h1>FANTASTICAL WEATHER</h1>
+        <Link to="/">
+          <h2>Fantastical Weather</h2>
+        </Link>
       </div>
-      <div className="sunIcon"><FaCloudSunRain/></div>
       <ul className="nav-btns">
-        <li>HOME</li>
-        <li><a href="mailto:ceo@pinaple.io">CONTACT</a></li>
-        <li>ABOUT</li>
+        <li>
+          <Link to="/">HOME</Link>
+        </li>
+        <li>
+          <a href="mailto:ceo@pinaple.io">CONTACT</a>
+        </li>
+        <li>
+          <Link to="/about">ABOUT</Link>
+        </li>
       </ul>
     </nav>
   );
