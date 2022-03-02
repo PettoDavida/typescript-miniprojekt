@@ -1,0 +1,10 @@
+.forecast-container{
+    background: #3472CE;
+    padding: 130px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    color: white;
+    width: 100%;
+
+}
