@@ -18,6 +18,10 @@ function MainPage(){
         <div>
             <div>
                 <ShowWeather childToParent={infoFromChild}/>
+                <div>
+                <Clock />
+                <Date />
+                </div>
             </div>
             <Location parentToChild={location}/>
         </div>
