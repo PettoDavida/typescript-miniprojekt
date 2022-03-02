@@ -1,10 +1,15 @@
 * {
   font-family: sans-serif;
   transition: all 120ms linear 0s;
+  text-decoration: none;
 }
 
 .project-name {
   margin-left: 1rem;
+}
+
+h2 {
+  color: white;
 }
 
 .project-name:hover {
@@ -39,17 +44,10 @@
 
 .nav-btns > li > a {
   color: rgb(223, 221, 221);
-  text-decoration: none;
 }
 
 .nav-btns > li > a:hover {
   cursor: pointer;
   background-color: rgb(53, 51, 51);
   color: rgb(255, 255, 255);
-}
-
-.sunIcon{
-  font-size: 50px;
-  color: #3472CE;
-  
 }
