@@ -4,8 +4,6 @@ function MainPage(){
     return(
         <div>
             <h1>Hello world</h1>
-            <Clock />
-            <Date />
         </div>
     )
 }
