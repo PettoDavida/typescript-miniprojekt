@@ -13,11 +13,16 @@ function Input(prop: any){
        }
 
     return(
-        <input
-        type="text"
-        defaultValue={location}
-        onKeyDown={getLocation}
-        placeholder="Enter location"/>
+        // <input
+        // id="searchText"
+        // type="text"
+        // defaultValue={location}
+        // onKeyDown={getLocation}
+        // placeholder="Search Location"/>
+        <form className="searchForm">
+            <input id="searchText" type="text" defaultValue={location} onKeyDown={getLocation} placeholder="Search Location"/>
+            <input className="search-btn" type="submit" name="" value="Search"/>
+            </form>
         )
 }
 

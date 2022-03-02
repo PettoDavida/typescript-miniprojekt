@@ -1,13 +1,15 @@
-import React from "react";
-import './Location.css';
+import '../components/CSS/Location.css';
 
-function Location() {
+function Location(prop: any) {
     return (
         <div className="location">
-            <h1>Gothenburg</h1>
-            <hr />
+            <h1>{capitalizeFirstLetter(prop.parentToChild)}</h1>
         </div>
     );
 }
+
+function capitalizeFirstLetter(string: string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
 
 export default Location;
