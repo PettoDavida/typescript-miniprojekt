@@ -1,4 +1,3 @@
-import { CSSProperties } from "react";
 import ShowWeather from "../components/showWeather";
 
 function MainPage(){
