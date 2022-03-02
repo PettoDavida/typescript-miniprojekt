@@ -6,14 +6,10 @@ import { useState } from "react";
 
 
 function MainPage(){
-
     const [location, setLocation] = useState('')
-
     const infoFromChild = (location: string) => {
-            setLocation(location) 
-        
+            setLocation(location)       
        }
-
     return(
         <div>
             <div>
