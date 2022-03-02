@@ -12,8 +12,6 @@ function Input(prop: any){
         }
        }
 
-
-
     return(
         <input
         type="text"
