@@ -9,9 +9,9 @@ function ShowWeather(prop:any){
     const [weatherData, setData] = useState([])
 
     const infoFromChild = (location: string) => {
-        {getWeather(location).then( (d: any) => {setData(d)} ).catch( (reason) => {console.log(reason)} )}
+        getWeather(location).then( (d: any) => {setData(d)} ).catch( (reason) => {console.log(reason)} )
         prop.childToParent(location) 
-       }
+    }
 
 
 

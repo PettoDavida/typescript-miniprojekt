@@ -1,5 +1,5 @@
 import '../components/CSS/Clock.css'
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 function Clock() {
     const [clockState, setClockstate] = useState<any | null>(null)
     useEffect(() => {
@@ -9,11 +9,9 @@ function Clock() {
         }, 10)
     }, [])
 
-    const today = new Date();
- 
     return (
         <div className="Clock">{clockState}</div>
     );
-  }
-  
-  export default Clock;
+    }
+
+export default Clock;

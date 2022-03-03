@@ -1,6 +1,5 @@
 import  { useState } from "react";
 import '../components/CSS/SearchBar.css';
-import { FaSearch } from 'react-icons/fa';
 
 function SearchBar(prop: any) {
 
