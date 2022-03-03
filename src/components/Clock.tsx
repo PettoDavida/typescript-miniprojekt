@@ -9,10 +9,9 @@ function Clock() {
         }, 10)
     }, [])
 
- 
     return (
         <div className="Clock">{clockState}</div>
     );
-  }
-  
-  export default Clock;
+    }
+
+export default Clock;
