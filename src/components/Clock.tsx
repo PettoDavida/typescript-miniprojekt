@@ -9,7 +9,6 @@ function Clock() {
         }, 10)
     }, [])
 
-    const today = new Date();
  
     return (
         <div className="Clock">{clockState}</div>
